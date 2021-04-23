@@ -1,1 +1,206 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+/* VARIABLES */
+/* MIXINS */
+/* GLOBALS */
+* {
+	box-sizing : border-box;
+	margin     : 0;
+	padding    : 0;
+}
 
+html {
+	font-size : 62.5%;
+}
+
+h1 {
+	color       : #4E5150;
+	font-family : 'Montserrat', sans-serif;
+	font-size   : 1.4rem;
+	font-weight : 600;
+}
+
+h2 {
+	color       : #A9A9A9;
+	font-family : 'Montserrat', sans-serif;
+	font-size   : 1rem;
+	font-weight : 600;
+}
+
+h3 {
+	color       : #4E5150;
+	font-family : 'Montserrat', sans-serif;
+	font-size   : 1.2rem;
+	font-weight : 600;
+}
+
+h4 {
+	color       : #BDBDBD;
+	font-family : 'Montserrat', sans-serif;
+	font-size   : 1.2rem;
+	font-weight : 600;
+}
+
+h5 {
+	color       : #B9BDCF;
+	font-family : 'Montserrat', sans-serif;
+	font-size   : 1.4rem;
+	font-weight : 500;
+}
+
+.container {
+	margin    : 0 auto;
+	max-width : 35rem;
+	width     : 95%;
+}
+
+/* PROFILE */
+.profile {
+	padding-top   : 3rem;
+	margin-bottom : 3.9rem;
+}
+
+.profile__information {
+	display        : flex;
+	flex-direction : column;
+	align-items    : center;
+	margin-bottom  : 1.2rem;
+}
+
+.profile__information__picture {
+	height        : 10rem;
+	max-width     : 10rem;
+	margin-bottom : 1.124rem;
+}
+
+.profile__information__picture img {
+	border-radius : 1.6rem;
+	width         : 100%;
+}
+
+.profile__information h1 {
+	margin-bottom : 0.4rem;
+}
+
+.profile__details {
+	display         : flex;
+	justify-content : center;
+	gap             : 1.2rem;
+}
+
+.profile__details__container {
+	border-radius    : 1.2rem;
+	display          : flex;
+	flex-direction   : column;
+	justify-content  : center;
+	height           : 5.2rem;
+	width            : 7.8rem;
+	background-color : #E5E5E5;
+	text-align       : center;
+}
+
+.profile__details__container h3 {
+	margin-bottom : 0.3rem;
+}
+
+/* GALLERY */
+.gallery {
+	display               : grid;
+	grid-template-columns : repeat(3, 1fr);
+	grid-auto-rows        : auto;
+	column-gap            : 1.17rem;
+	row-gap               : 1.172rem;
+	margin-bottom         : 4.4rem;
+}
+
+.gallery img {
+	width         : 101%;
+	border-radius : 1.2rem;
+	filter        : drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+.gallery .card1 {
+	grid-column-end : span 1;
+	grid-row-end    : span 1;
+}
+
+.gallery .card2 {
+	grid-column-end : span 2;
+}
+
+.gallery .card3 {
+	height          : 101%;
+	grid-column-end : span 1;
+	grid-row-end    : span 2;
+}
+
+/* FOOTER */
+.footer {
+	text-align     : center;
+	padding-bottom : 2.4rem;
+}
+
+.footer p strong {
+	text-decoration : underline;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width : 768px) {
+	h1 {
+		font-size : 2.4rem;
+	}
+	
+	h2 {
+		font-size : 1.4rem;
+	}
+	
+	h3 {
+		font-size : 1.8rem;
+	}
+	
+	h4 {
+		font-size : 1.4rem;
+	}
+	
+	.container {
+		max-width : 96rem;
+	}
+	
+	.profile {
+		padding-top   : 6rem;
+		margin-bottom : 6.4rem;
+	}
+	
+	.profile__information {
+		margin-bottom : 2.4rem;
+	}
+	
+	.profile__information__picture {
+		height        : 15.6rem;
+		max-width     : 15.6rem;
+		margin-bottom : 1.6rem;
+	}
+	
+	.profile__details {
+		gap : 2.4rem;
+	}
+	
+	.profile__details__container {
+		height : 7.2rem;
+		width  : 12.8rem;
+	}
+	
+	.profile__details__container h3 {
+		margin-bottom : 0.4rem;
+	}
+	
+	.profile h1 {
+		margin-bottom : 0.8rem;
+	}
+	
+	.gallery {
+		column-gap    : 3.2rem;
+		row-gap       : 3.2rem;
+		margin-bottom : 13.4rem;
+	}
+}
